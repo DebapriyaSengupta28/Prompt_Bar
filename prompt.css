@@ -1,0 +1,44 @@
+.prompt-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prompt-bar {
+  width: 100%;
+  position: relative;
+}
+
+#promptTextarea {
+  width: 100%;
+  min-height: 100px; /* Minimum height */
+  max-height: 300px; /* Maximum height */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  overflow: hidden; /* Hide the scrollbar until content exceeds max-height */
+  font-family: inherit; /* Inherit font styles */
+  font-size: inherit; /* Inherit font styles */
+}
+
+#promptTextarea.scrollable {
+  overflow-y: auto; /* Show the scrollbar when content exceeds max-height */
+}
+
+.submit-button-container {
+  margin-top: 10px;
+}
+
+#submitButton {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
